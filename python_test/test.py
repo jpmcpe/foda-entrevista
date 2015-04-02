@@ -32,20 +32,20 @@ class SplitBillTestCase(unittest.TestCase):
         return
 
     def test_wrong_split(self):
-        s = split_bill(price=149.99, discount=15, people=[(1 / 2), (1 / 6), (1 / 6), (1 / 6)])
-        s = sum(s)
+        s = split_bill(price=149.99, discount=15, people=[(1.0 / 2), (1.0 / 6), (1.0 / 6), (1.0 / 6)])
+        s =  round(sum(s), 2)
         self.assertEquals(s, 127.49)
 
     def test_right_sum(self):
-        s = split_bill(price=149.99, discount=15, people=[(1 / 7), (2 / 7), (1 / 7), (3 / 7)])
-        s = sum(s)
+        s = split_bill(price=149.99, discount=15, people=[(1.0 / 7), (2.0 / 7), (1.0 / 7), (3.0 / 7)])
+        s = round(sum(s), 2)
         self.assertEquals(s, 127.49)
 
     def test_wrong_sum(self):
         s = split_bill(price=1, discount=0,
-                       people=[(1 / 10), (1 / 10), (1 / 10), (1 / 10), (1 / 10),
-                               (1 / 10), (1 / 10), (1 / 10), (1 / 10), (1 / 10)])
-        s = sum(s)
+                       people=[(1.0 / 10), (1.0 / 10), (1.0 / 10), (1.0 / 10), (1.0 / 10),
+                               (1.0 / 10), (1.0 / 10), (1.0 / 10), (1.0 / 10), (1.0 / 10)])
+        s = round(sum(s), 2)
         self.assertEquals(s, 1)
 
 import sys
