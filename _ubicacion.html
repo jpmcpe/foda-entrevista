@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://foda.internal:8008/rd/location/ -->
+<html><head lang="es"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><link type="text/css" rel="stylesheet" href="./_ubicacion_files/css"><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height">
+  <title></title>
+  <script type="text/javascript" src="./_ubicacion_files/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="./_ubicacion_files/bootstrap.min.js"></script>
+
+  
+  
+
+  
+  
+  
+  <!--<script type="text/javascript" src="./_ubicacion_files/js">-->
+  <!--</script>-->
+  <script src="./_ubicacion_files/main.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./_ubicacion_files/style.css">
+
+  
+<link rel="shortcut icon" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="196x196" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-196.png">
+<link rel="icon" type="image/png" sizes="160x160" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-160.png">
+<link rel="icon" type="image/png" sizes="96x96" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-96.png">
+<link rel="icon" type="image/png" sizes="64x64" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-16.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-152.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-144.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-120.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-114.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-76.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-72.png">
+<link rel="apple-touch-icon" href="http://foda.internal:8008/static/foda_app/images/favicon/favicon-57.png">
+<meta name="msapplication-TileColor" content="#FFFFFF&#39; %}">
+<meta name="msapplication-TileImage" content="/static/foda_app/images/favicon/favicon-144.png">
+<meta name="msapplication-config" content="/static/foda_app/images/favicon/browserconfig.xml">
+
+  
+    <script src="./_ubicacion_files/es.js"></script>
+  
+  <script src="./_ubicacion_files/utils.js"></script>
+<!--<script type="text/javascript" charset="UTF-8" src="./_ubicacion_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./_ubicacion_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="./_ubicacion_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./_ubicacion_files/geocoder.js"></script><script type="text/javascript" charset="UTF-8" src="./_ubicacion_files/onion.js"></script><script type="text/javascript" charset="UTF-8" src="./_ubicacion_files/controls.js"></script><script type="text/javascript" charset="UTF-8" src="./_ubicacion_files/stats.js"></script></head>-->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js">
+</script>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <div id="logo-top-menu">Foda</div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse">
+    </div>
+  </div>
+</div>
+
+<div class="container" id="container">
+
+
+  <div class="inner-container">
+    
+  <div id="location" class="center-text">
+    <div id="location-map"> </div>
+    
+    <input name="address" id="inputAddress" class="form-control" type="text" placeholder="Dirección">
+    <input disabled="" name="district" id="inputDistrict" class="form-control ib" type="text" placeholder="Distrito">
+    <input disabled="" name="city" id="inputCity" class="form-control ib" type="text" placeholder="Ciudad">
+
+  </div>
+
+
+  </div>
+
+  
+  <div class="footer navbar navbar-default navbar-fixed-bottom col-md-12">
+    <div class="row center-text">
+      <button type="button" class="btn btn-default btn-lg" id="button-location-back">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+        Regresar
+      </button>
+    </div>
+  </div>
+
+
+</div>
+
+
+  <script src="./_ubicacion_files/location.js"></script>
+</body></html>
